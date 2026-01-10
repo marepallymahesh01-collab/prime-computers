@@ -1,0 +1,210 @@
+/* =================== HEADER BASE =================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(15px);
+  transition: all 0.4s ease;
+  border-bottom: 1px solid rgba(230, 199, 68, 0.1);
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* =================== NAV CONTAINER =================== */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* =================== LOGO =================== */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-img img {
+  width: 200px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.logo-text h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 -98px;
+  letter-spacing: 1px;
+}
+
+.logo-text p {
+  color: #e6c744;
+  font-weight: 200;
+  font-size: 19px !important; /* force size increase */
+  margin: 0 -70px; /* remove negative margin */
+  letter-spacing: 2px;
+}
+
+
+/* =================== NAV MENU =================== */
+.nav-menu {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #e6c744;
+}
+
+/* =================== CTA BUTTON =================== */
+.cta-button {
+  background: linear-gradient(135deg, #e6c744, #d4b63a);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* =================== MOBILE MENU TOGGLE =================== */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: 2px solid #e6c744;
+  color: #e6c744;
+  font-size: 22px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =================== MOBILE STYLES (≤768px) =================== */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding-top: 40px;
+    gap: 24px;
+    transition: right 0.4s ease;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li a {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .logo-text h1 {
+    font-size: 20px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+  }
+
+  .nav-container {
+    padding: 0 16px;
+  }
+}
+
+/* =================== TABLET STYLES (769px – 1024px) =================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-container {
+    padding: 0 24px;
+  }
+
+  .logo-img img {
+    width: 160px;
+    height: 100px;
+  }
+
+  .logo-text h1 {
+    font-size: 20px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+
+  .nav-menu li a {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+/* =================== DESKTOP STYLES (>1024px) =================== */
+@media (min-width: 1025px) {
+  .nav-container {
+    padding: 0 40px;
+  }
+
+  .logo-img img {
+    width: 200px;
+    height: 130px;
+  }
+
+  .logo-text h1 {
+    font-size: 22px;
+  }
+
+  .logo-text p {
+    font-size: 11px;
+  }
+
+  .nav-menu {
+    gap: 36px;
+  }
+
+  .nav-menu li a {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
