@@ -1,8 +1,11 @@
 import "./Hero.css";
+import bgImage from "../assets/bg5.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="hero">
+    <section  id="home"
+      className="hero"
+      style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Overlay */}
       <div className="hero-overlay"></div>
 

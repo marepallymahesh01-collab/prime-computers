@@ -10,6 +10,7 @@
 .why-us-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   gap: 100px;
   align-items: center;
 }
@@ -64,10 +65,11 @@
 /* IMAGE */
 .why-us-images {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 40px; /* Increase gap between images */
+  padding: 20px; /* optional: space around the whole container */
 }
 
 .why-us-image img {
@@ -78,6 +80,7 @@
   object-fit: cover;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .why-us-image img:hover {

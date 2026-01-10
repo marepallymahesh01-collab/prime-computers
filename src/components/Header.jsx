@@ -1,4 +1,5 @@
 import "./Header.css";
+import logo from '../assets/logo3.png'
 
 const Header = ({
   scrolled,
@@ -14,7 +15,7 @@ const Header = ({
         {/* Logo */}
         <div className="logo" onClick={() => handleNavClick("home")}>
           <div className="logo-img">
-            <img src="/logos1.png" alt="Prime Computer Logo" />
+            <img src={logo} alt="Prime Computer Logo" />
           </div>
           <div className="logo-text">
             <h1>Prime Computers</h1> 

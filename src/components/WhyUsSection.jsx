@@ -1,4 +1,9 @@
 import './WhyUs.css';
+import Img04 from "../assets/whyus-4.jpg";
+import Img02 from "../assets/whyus-2.jpg";
+// import Img03 from "../assets/whyus-3.jpg";
+
+
 
 // This explains why customers should choose this service
 const WhyUsSection = () => {
@@ -40,17 +45,23 @@ const WhyUsSection = () => {
           <div className="why-us-images">
             <div className="why-us-image">
               <img 
-                src="/public/door2.jpeg" 
+                src={Img04}
                 alt="On‑site laptop service technician" 
               />
             </div>
 
             <div className="why-us-image">  
               <img 
-                src="/public/door.jpeg" 
+                src={Img02}
                 alt="Laptop & desktop repair solution" 
               />
             </div>
+            {/* <div className="why-us-image">  
+              <img 
+                src={Img03}
+                alt="Laptop & desktop repair solution" 
+              />
+            </div> */}
           </div>
         </div>
       </div>
