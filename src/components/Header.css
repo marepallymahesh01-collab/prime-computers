@@ -112,7 +112,13 @@
     transition: right 0.4s ease;
     z-index: 999;
   }
-
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    gap: 8px;
+    max-width: 75%;   /* creates space for toggle */
+  }
   .nav-menu.active {
     right: 0;
   }
@@ -128,6 +134,7 @@
 
   .mobile-menu-toggle {
     display: block;
+    margin-right: 5px; /* GAP between logo & toggle */
   }
 
   .logo-text h1 {
@@ -136,6 +143,7 @@
 
   .logo-text p {
     font-size: 10px;
+    margin-left: -80px;
   }
 
   .nav-container {
