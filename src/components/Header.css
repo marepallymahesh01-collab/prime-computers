@@ -134,7 +134,7 @@
 
   .mobile-menu-toggle {
     display: block;
-    margin-right: 5px; /* GAP between logo & toggle */
+    margin-right: -10px; /* GAP between logo & toggle */
   }
 
   .logo-text h1 {
