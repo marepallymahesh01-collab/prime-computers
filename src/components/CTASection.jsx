@@ -44,11 +44,11 @@ const CTASection = () => {
                 <p>
                   <strong><FaMapMarkerAlt className="icon-location" /> Location :</strong>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=2-1-285+Mahaveer+Nagar+Colony+Kukatpally+Kukatpally+Hyderabad+500072"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    2-1-285, Yellammabanda, Hyderabad, India
+                      href="https://www.google.com/maps/dir/17.512222,78.4060134/Prime+Computers+Sales+and+Services,+Air+Force+Colony,+Dattatreya+Colony,+Yellamma+Banda,+Jagathgiri+Gutta,+Hyderabad,+Telangana+500072"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    Prime Computers, Yellammabanda, Hyderabad, India
                   </a>
                 </p>
               </div>
