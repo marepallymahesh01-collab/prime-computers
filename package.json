@@ -2,7 +2,7 @@
   "name": "prime_computersss",
   "version": "1.0.0",
   "private": true,
- "homepage": "https://marepallymahesh01-collab.github.io/prime-computers",
+  "homepage": "https://marepallymahesh01-collab.github.io/prime-computers",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marepallymahesh01-collab.github.io/prime-computers/sitemap.xml
