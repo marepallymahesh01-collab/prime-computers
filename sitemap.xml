@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home page -->
+  <url>
+    <loc>https://marepallymahesh01-collab.github.io/prime-computers/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About page -->
+  <url>
+    <loc>https://marepallymahesh01-collab.github.io/prime-computers/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services / Products page -->
+  <url>
+    <loc>https://marepallymahesh01-collab.github.io/prime-computers/services</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact page -->
+  <url>
+    <loc>https://marepallymahesh01-collab.github.io/prime-computers/contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
